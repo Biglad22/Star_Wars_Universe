@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Universe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"/>
+    <link href="assets/css/uicons-regular-rounded.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="shortcut icon" href="assets\Logo-png.png"/>
+</head>
+</head>
+
+<body id="body ">
+    <div class="body ">
+        <div id="s-circle"></div>
+        <div class="contain row m-0">
+            <div class="nav2 col-12 ">
+                <nav class="d-flex row mx-0 justify-content-between align-items-center">
+                    <div class="logo col-auto col-lg-3">
+                        <img src="assets\Logo-png.png" height="100%">
+                    </div>
+                    <div class="menu col-auto d-lg-block align-items-center justify-content-end order-3 order-lg-2">
+                        <div class="menu col-auto d-flex d-lg-none justify-content-end align-items-center">
+                            <span class="fi fi-rr-menu-burger"></span>
+                            <span class="fi fi-rr-cross-small"></span>
+                        </div>
+                        <div class="nav-links  col-lg-auto d-lg-block p-3 p-lg-0">
+                            <ul class="p-0 m-0 d-block d-lg-flex ">
+                                <li class="d-block d-lg-inlineblock mb-3 me-lg-5"><a href="#" class="px-5 py-3">Home</a></li>
+                                <li class="d-block d-lg-inline-block mb-3 me-lg-5"><a href="developer.html" class="px-5 py-3">Developer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="date-body  m-0 col-6  col-lg-3 order-2 order-lg-3">
+                        <p id="dt-display" class="mx-auto my-0 m ms-lg-auto me-lg-0"></p>
+                    </div>
+                </nav>
+            </div>
+            <div class="main-body col-12 row row-cols-2 gap-5  gx-lg-5 m-0 justify-content-between">
+                <div class="form py-4 px-0 row col-12 col-lg-4">
+                    <p class="head text-start mb-5 h-content">enter your <span class='text'>favorite character's</span> name</p>
+                    <form method="get" class="m-0" action="#">
+                        <div class="input-box mb-4">
+                            <input type="text" class="border border-2 border-white py-3 px-3 mb-2"
+                                placeholder="enter a name e.g. luke skywalker or finn" id="input"></input>
+                            <p id="notice">nothing</p>
+                        </div>
+                        <div class="last-resort mb-5">
+                            <p class="text"><input type="checkbox" class='me-3 border border-2' value="dKAo" id="pick">don't
+                                know anyone?</p>
+                            <select class="last-resortopt  py-3 px-3 border border-2 border-white bg-transparent">
+                                <option selected class="py-3 px-3">Select one</option>
+                            </select>
+                        </div>
+                        <div class="d-flex ">
+                            <button type="submit" class=" border border-5 border-white py-3 px-5 m-0"
+                                id="sm-button">Submit</button>
+                            <div class="pro border border-5 border-white py-3 px-3 m-0 ">
+                                <div id='progress'></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="char-details ps-md-5 col-12 col-md-12 col-lg-8 row gap-2 justify-content-center justify-content-lg-end flexwrap-wrap">
+                    <div class="char-bio px-4 py-4 col-12 col-md-6 border border-2 border-white rounded-4 order-2 order-md-1">
+                        <div class="bio-box mb-4">
+                            <p class="mb-1 mw-100%"><b>Name: </b><span id="c-name"></span></p>
+                            <p class="mb-1"><b>Specie: </b><span id="c-specie"></span></p>
+                            <p class="mb-1"><b>Gender: </b><span id="c-gender"></span></p>
+                            <p class="mb-1"><b>Home World: </b><span id="c-hWorld"></span></p>
+                            <p class="hidden mb-1"><b>Skin Color: </b><span id="c-sColor"></span></p>
+                            <p class="hidden mb-1"><b>Eye Color: </b><span id="c-eColor"></span></p>
+                            <p class="hidden mb-1"><b>Masters </b><span id="c-masters"></span></p>
+                        </div>
+                        <button type="button" id="see-more" class="px-5 py-3 mt-auto">see more</button>
+                    </div>
+                    <div class="char-image px-4 py-4 col-12 col-md-5 border border-2 rounded-4 order-1 order-md-2">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

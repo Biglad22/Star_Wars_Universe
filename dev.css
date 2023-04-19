@@ -1,0 +1,152 @@
+HTML{
+    font-size:62.5%;
+}
+*, *:before, *:after {
+    box-sizing:border-box;
+    margin:0;
+}
+body{
+    font-size:1rem;
+    background-color:black;
+    background-size:cover;
+    background-position:center center;
+    margin:0;
+}
+
+/*main div*/
+
+.body{
+    position:relative;
+    max-width:100%;
+    height:fit-content;
+}
+
+.contain{
+    padding:5vh 0;
+    top:0;
+    width:100vw;
+    height:fit-content;
+    background-clip:border-box;
+    backdrop-filter:blur(50px);
+    -webkit-backdrop-filter:blur(50px);
+}
+
+body > div div{
+    margin:0;
+}
+/*nav bar*/
+.nav2 {
+    margin-bottom:4em;
+    position:sticky;
+    top: 0;
+    align-self:flex-start;
+    padding:0 10vw;
+    background-color:rgba(0,0,0,0.6);
+}
+
+
+#dt-display{
+    width:fit-content;
+    font-size:4em;
+    color:rgba(255,255,255,0.3)
+}
+
+.fi-rr-menu-burger, .fi-rr-cross-small{
+    font-size:4em;
+    height:fit-content;
+    color:rgba(255,255,255,1);
+}
+
+ul{
+    list-style:none;
+}
+li a{
+    font-size:1.8em;
+    text-decoration:none;
+    color:rgba(255,255,255,1);
+    font-weight:700;
+}
+
+/*nav-links hover effect*/
+li a:hover{
+    color:green;
+}
+
+.logo{
+    height:4em;
+}
+
+
+
+#s-circle{
+    height:10vh;
+    aspect-ratio :1/1;
+    border-radius:50%;
+    background-color:green;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    z-index:0;
+}
+
+.main-body {
+    max-width:100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height:fit-content;
+}
+.main-body > div > img{
+    width:100%;
+}
+
+.dev-details > p{
+    margin:0;
+    font-size:2.7em;
+    margin-bottom:16px;
+    text-transform:capitalize;
+    color:green;  
+}
+.dev-details ul{
+    margin:0;
+    padding:0;
+}
+
+.dev-details ul > li{
+    margin-bottom:8px;
+    font-size:1.8em;
+    text-transform:capitalize;
+    color:rgba(255,255,255,0.8);
+}
+.dev-details ul > li > b{
+    color:green; 
+}
+
+@media screen and (max-width:991px){
+    .menu{
+        position:relative;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:100%;
+        right:0%;
+        background-color:rgba(0, 128, 0, 0.80);
+        border-radius:4px;
+        box-shadow:0 0 32px rgba(0,0,0,1);
+    }
+    .fi-rr-cross-small{
+        display:none;
+    }
+}
+
+@media screen and (max-width:550px){
+    HTML{
+        font-size:43.75%;
+    }
+}
+
+@media screen and (max-width:340px){
+    HTML{
+        font-size:31.25%;
+    } 
+}

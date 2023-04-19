@@ -1,0 +1,301 @@
+HTML{
+    font-size:62.5%;
+}
+*, *:before, *:after {
+    box-sizing:border-box;
+    margin:0;
+}
+body{
+    font-size:1rem;
+    background-color:black;
+    background-size:cover;
+    background-position:center center;
+    margin:0;
+}
+
+/*main div*/
+
+.body{
+    position:relative;
+    width:100vw;
+    min-height:100vh;
+}
+
+.contain{
+    padding:5vh 0;
+    top:0;
+    backdrop-filter:blur(50px);
+    -webkit-backdrop-filter:blur(50px);
+    width:100vw;
+    min-height:100vh;
+}
+
+body > div div{
+    margin:0;
+}
+/*nav bar*/
+.nav2{
+    margin-bottom:4em;
+    display:block;
+    position:sticky;
+    top:0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    align-self:flex-start;
+    background-color:rgba(0,0,0,0.6);
+    backdrop-filter:blur(50px);
+    -webkit-backdrop-filter:blur(50px);
+}
+
+/*main-body*/
+.main-body{
+    max-height:min-content;
+    max-width:100%;
+}
+
+#sm-button{
+    width:100%;
+    margin:1.6em 0;
+    height:3.6em;
+
+}
+
+#dt-display{
+    width:fit-content;
+    font-size:4em;
+    color:rgba(255,255,255,0.3)
+}
+
+.fi-rr-menu-burger, .fi-rr-cross-small{
+    font-size:24px;
+    height:fit-content;
+    color:rgba(255,255,255,1);
+}
+
+ul{
+    list-style:none;
+}
+li a{
+    font-size:1.8em;
+    text-decoration:none;
+    color:rgba(255,255,255,1);
+    font-weight:700;
+}
+
+/*nav-links hover effect*/
+li a:hover{
+    color:green;
+}
+
+.logo{
+    height:4em;
+}
+
+/*main-body*/
+.main-body {
+    max-width:100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height:fit-content;
+}
+
+.head{
+    font-size:2.7em;
+    color:rgba(255,255,255,0.8);
+    font-weight:600;
+    text-transform:capitalize;
+
+}
+/*submit button*/
+#sm-button{
+    height:fit-content;
+    font-size:1.8em;
+    text-transform:uppercase;
+    font-weight:700;
+    color:rgba(255,255,255,1);
+    border-color:rgba(255,255,255,1);
+    background:unset;
+}
+/*submit button hover effect*/
+#sm-button:hover{
+    border-color:green;
+}
+
+/*form container*/
+.form{
+    height:fit-content;
+}
+form{
+    width:100%;
+}
+
+.last-resort{
+    visibility:hidden;
+}
+
+.last-resort > .text{
+    font-size:1.8em;
+    font-weight:700;
+    text-transform:capitalize;
+    color:rgba(255,255,255,0.5);
+}
+
+/*drop-down*/
+select{
+    width:100%;
+    font-size:1.8rem;
+    font-weight:500;
+    text-transform:capitalize;
+    color:rgba(255,255,255,1);
+}
+option{
+    background-color:green;
+    font-size:1em;
+    font-weight:500;
+    text-transform:capitalize;
+    max-width:max-content;
+}
+
+
+#input{
+    width:100%;
+    font-size:1.8em;
+    text-transform:capitalize;
+    color:rgba(255,255,255,1);
+    background:unset;
+}
+#input:focus, #input:focus-visible{
+    width:100%;
+    font-size:1.8em;
+    text-transform:capitalize;
+    color:rgba(255,255,255,1);
+    background:unset;
+    outline:none;
+}
+
+#input::placeholder{
+    color:rgba(255,255,255,0.6);
+    text-transform:none;
+}
+
+#input:focus::placeholder{
+    color:rgba(255,255,255,0.3);
+}
+
+
+#input:active{
+    background:unset;
+}
+#notice{
+    visibility:hidden;
+    font-size:1.4em;
+    font-weight:500;
+    text-transform:capitalize;
+    color:white;
+
+}
+
+/*character bio*/
+.bio-box p{
+    max-height:100%;
+    font-size:1.8em;
+    color:rgba(255,255,255,0.8);
+    text-transform:capitalize; 
+}
+
+.char-details{
+    max-height:100%;
+}
+
+.char-bio{
+    height:fit-content;
+}
+
+.char-image{
+    aspect-ratio:1/1.2;
+}
+
+.bio-box  .hidden{
+    display:none;
+}
+
+
+#see-more{
+    width:100%;
+    background:unset;
+    border:none;
+    font-size:1.8em;
+    font-weight:700;
+    text-transform:capitalize;
+    color:rgba(255,255,255,1);
+}
+
+/*see-more hover effect*/
+#see-more:hover{
+    color:green;
+}
+
+#s-circle{
+    height:7.5vh;
+    aspect-ratio :1/1;
+    border-radius:50%;
+    background-color:green;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    z-index:0;
+}
+
+.text{
+    color:green;
+}
+
+.pro{
+    display:none;
+    min-height:100%;
+    width:100%;
+}
+
+#progress{
+    height:2.7em;
+    width:0%;
+    background-color:green;
+}
+
+@media screen and (max-width:991px){
+    .menu{
+        position:relative;
+    }
+
+
+    .main-body{
+        max-height:min-content;
+        max-width:100%;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:100%;
+        right:0%;
+        background-color:rgba(0, 128, 0, 0.80);
+        border-radius:4px;
+        box-shadow:0 0 24px rgba(0,0,0,1);
+    }
+    .fi-rr-cross-small{
+        display:none;
+    }
+}
+
+@media screen and (max-width:550px){
+    HTML{
+        font-size:43.75%;
+    }
+}
+
+@media screen and (max-width:340px){
+    HTML{
+        font-size:31.25%;
+    } 
+}
